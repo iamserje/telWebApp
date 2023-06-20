@@ -36,18 +36,19 @@ body {
 }
 
 .main__title {
-   margin-top: 50px;
+   margin-top: 70px;
    margin-bottom: 10px;
 }
 
 .main__image {
-   width: 70px;
+   width: 90px;
    margin: 30px auto;
 }
 
 .mait__descr {
    width: 300px;
    margin: 0 auto;
+   font-size: 1.5em;
 }
 
 #buy {
@@ -65,4 +66,23 @@ body {
 }
 #buy:hover {
    background-color: var(--tg-theme-secondary-bg-color);
+}
+
+#form {
+   display: none;
+   text-align: center;
+}
+
+input {
+   width: 90%;
+   margin: 10px 5%;
+   padding: 15px 10px;
+   font-size: 14px;
+   outline: none;
+   border: 2px solid silver;
+   border-radius: 5px;
+}
+
+input:hover {
+   border-color: #db5d5d;
 }
