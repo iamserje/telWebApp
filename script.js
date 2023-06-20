@@ -1,8 +1,8 @@
 const tg = window.Telegram.WebApp;
+tg.expand();
 
 const buyButton = document.getElementById('buy');
 const orderButton = document.getElementById('order');
-// tg.expand();
 
 buyButton.addEventListener('click', () => {
    document.getElementById('main').style.display = 'none';
@@ -11,6 +11,7 @@ buyButton.addEventListener('click', () => {
 });
 
 orderButton.addEventListener('click', () => {
+   document.getElementById('error').innerText = '';
    nameUs = document.getElementById('user_name').value;
    emailUs = document.getElementById('user_email').value;
    phoneUs = document.getElementById('user_phone').value;
@@ -27,6 +28,8 @@ orderButton.addEventListener('click', () => {
       name: nameUs,
       email: emailUs,
       phone: phoneUs
-   }
-   tg.close(JSON.stringify(data));
+   };
+   tg.sendData(JSON.stringify(data));
+
+   tg.close();
 });
