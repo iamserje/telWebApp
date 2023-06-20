@@ -1,0 +1,68 @@
+@font-face {
+   font-family: 'Montserrat';
+   src: url('./fonnts/Montserrat-ExtraLight.woff2') format('woff2'),
+       url('./fonnts/Montserrat-ExtraLight.woff') format('woff');
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('./fonnts/Montserrat-Medium.woff2') format('woff2'),
+       url('./fonnts/Montserrat-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 200;
+   color: var(--tg-theme-text-color);
+   background-color: var(--tg-theme-bg-color);
+}
+
+#main {
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+}
+
+.main__title {
+   margin-top: 50px;
+   margin-bottom: 10px;
+}
+
+.main__image {
+   width: 70px;
+   margin: 30px auto;
+}
+
+.mait__descr {
+   width: 300px;
+   margin: 0 auto;
+}
+
+#buy {
+   width: 200px;
+   height: 60px;
+   margin-top: 50px;
+   font-size: 20px;
+   font-weight: 500;
+   color: var(--tg-theme-button-text-color);
+   background-color: var(--tg-theme-button-color);
+   border: 0;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 200ms ease;
+}
+#buy:hover {
+   background-color: var(--tg-theme-secondary-bg-color);
+}
