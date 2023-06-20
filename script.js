@@ -1,8 +1,8 @@
 const tg = window.Telegram.Webapp;
-tg.expand();
 
 const buyButton = document.getElementById('buy');
 const orderButton = document.getElementById('order');
+// tg.expand();
 
 buyButton.addEventListener('click', () => {
    document.getElementById('main').style.display = 'none';
