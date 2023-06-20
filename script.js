@@ -23,5 +23,10 @@ orderButton.addEventListener('click', () => {
       return;
    }
 
-   tg.close()
+   const data = {
+      name: nameUs,
+      email: emailUs,
+      phone: phoneUs
+   }
+   tg.close(JSON.stringify(data));
 });
