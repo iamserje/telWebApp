@@ -1,4 +1,4 @@
-const tg = window.Telegram.Webapp;
+const tg = window.Telegram.WebApp;
 
 const buyButton = document.getElementById('buy');
 const orderButton = document.getElementById('order');
