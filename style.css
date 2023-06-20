@@ -35,13 +35,12 @@ body {
    text-align: center;
 }
 
-.hide {
-   display: none;
-}
-
 .main__title {
    margin-top: 70px;
    margin-bottom: 10px;
+}
+.hide {
+   display: none;
 }
 
 .main__image {
@@ -55,7 +54,7 @@ body {
    font-size: 1.5em;
 }
 
-#buy {
+#buy, #order {
    width: 200px;
    height: 60px;
    margin-top: 50px;
