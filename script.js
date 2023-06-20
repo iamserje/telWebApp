@@ -15,6 +15,10 @@ orderButton.addEventListener('click', () => {
    nameUs = document.getElementById('user_name').value;
    emailUs = document.getElementById('user_email').value;
    phoneUs = document.getElementById('user_phone').value;
+   if (nameUs.length === 0) {
+      document.getElementById('error').innerText = 'Wrong name';
+      return;
+   }
    if (!emailUs.includes('@')) {
       document.getElementById('error').innerText = 'Wrong email';
       return;
